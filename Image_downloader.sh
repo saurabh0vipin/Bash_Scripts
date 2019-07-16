@@ -1,7 +1,7 @@
 #download the html code of the web page in page.html
 wget -U/Mozilla -q "https://wallpapercave.com/dark-knight-hd-wallpaper" -O - > page.html
 
-#geater all the image sources from the html and put into IMG_sources.txt
+#geather all the image sources from the html code and put into IMG_sources.txt
 grep -E "/wp/[^/\s]+\.(jpg|png|gif)" page.html -o > IMG_sources.txt
 
 #convert IMG_sources into meaning full urls and save url.txt
